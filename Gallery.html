@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .photo {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .photo img {
+            width: 280px;
+            height: 200px;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .photo:hover .overlay {
+            opacity: 1;
+        }
+
+        .caption {
+            margin: 0;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .info {
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery">
+    <div class="photo">
+        <img src="https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Car">
+        <div class="overlay">
+            <p class="caption">Mercedes Benz</p> 
+        </div>
+        <p class="info">Mercedes-Benz is renowned for its luxury vehicles, quality craftsmanship, and cutting-edge technology.</p>
+    </div>
+    <div class="photo">
+        <img src="https://images.pexels.com/photos/712618/pexels-photo-712618.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Vintage Car">
+        <div class="overlay">
+            <p class="caption">Vinatge Cars</p>
+        </div>
+        <p class="info">Vintage cars are generally classified as vehicles produced between 1919 and 1930.</p>
+    </div>
+    <div class="photo">
+      <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bike">
+      <div class="overlay">
+          <p class="caption">Royal Enfield</p> 
+      </div>
+      <p class="info">Royal Enfield's origins can be traced back to 1893 when the company was established in Redditch, England.</p>
+  </div>
+  <div class="photo">
+      <img src="https://images.pexels.com/photos/2745835/pexels-photo-2745835.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dirt Bike">
+      <div class="overlay">
+          <p class="caption">Dirt Bike</p>
+      </div>
+      <p class="info">Dirt bikes are lightweight frames, high ground clearance, and specialized suspension systems to handle rough and uneven terrains.</p>
+  </div>
+  <div class="photo">
+    <img src="https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Animal">
+    <div class="overlay">
+        <p class="caption">Tiger</p> 
+    </div>
+    <p class="info">A tiger is a large carnivorous mammal belonging to the Felidae family.</p>
+</div>
+<div class="photo">
+    <img src="https://images.pexels.com/photos/54108/peacock-bird-spring-animal-54108.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Birds">
+    <div class="overlay">
+        <p class="caption">Peacock</p>
+    </div>
+    <p class="info">The peacock is a large and colorful bird known for its extravagant and iridescent plumage.</p>
+</div>
+<div class="photo">
+  <img src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bycycle">
+  <div class="overlay">
+      <p class="caption">Bycycle</p> 
+  </div>
+  <p class="info">A bicycle, often simply called a bike, is a human-powered vehicle with two wheels, pedals, and a frame.</p>
+</div>
+<div class="photo">
+  <img src="https://images.pexels.com/photos/2092828/pexels-photo-2092828.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nature">
+  <div class="overlay">
+      <p class="caption">Nature</p>
+  </div>
+  <p class="info">Nature refers to the natural world and all the living organisms, landscapes, and phenomena that exist without human intervention.</p>
+</div>
+<div class="photo">
+<img src="https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=600" alt="River">
+<div class="overlay">
+    <p class="caption">River</p> 
+</div>
+<p class="info">A river is a natural watercourse, typically flowing towards an ocean, sea, lake, or another river.</p>
+</div>
+<div class="photo">
+<img src="https://images.pexels.com/photos/690598/pexels-photo-690598.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dance">
+<div class="overlay">
+    <p class="caption">Group Dance</p>
+</div>
+<p class="info">Dance is a form of expression that involves rhythmic movement of the body, often accompanied by music or other auditory stimuli.</p>
+</div>
+<div class="photo">
+<img src="https://images.pexels.com/photos/2168292/pexels-photo-2168292.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Athletic">
+<div class="overlay">
+  <p class="caption">Athletic</p> 
+</div>
+<p class="info">Running is an excellent cardiovascular exercise that helps strengthen the heart and improve circulation.</p>
+</div>
+<div class="photo">
+<img src="https://images.pexels.com/photos/17397548/pexels-photo-17397548/free-photo-of-women-playing-volleyball.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Volleyball">
+<div class="overlay">
+  <p class="caption">Volleyball</p>
+</div>
+<p class="info">Volleyball is a popular team sport played worldwide that involves two teams of six players each, separated by a net.</p>
+</div>
+<div class="photo">
+  <img src="https://media.gettyimages.com/id/1439441491/photo/melbourne-australia-virat-kohli-congratulates-hardik-pandya-of-india-for-getting-the-wicket.jpg?s=612x612&w=0&k=20&c=ZwoxB1GFcupUBx91H5FylaOygzyPRA6IF3waJERhaX8=" alt="Cricket">
+  <div class="overlay">
+      <p class="caption">Indian Cricket</p> 
+  </div>
+  <p class="info">The Indian cricket team is the national cricket team of India and is governed by the Board of Control for Cricket in India (BCCI).</p>
+</div>
+<div class="photo">
+  <img src="https://images.pexels.com/photos/5031938/pexels-photo-5031938.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Chicken Tandoori">
+  <div class="overlay">
+      <p class="caption">Chicken Tandoori</p>
+  </div>
+  <p class="info">
+    Chicken Tandoori is a popular and flavorful Indian dish that involves marinating chicken in a mixture of yogurt and spices and then cooking it in a tandoor.</p>
+</div>
+<div class="photo">
+<img src="https://images.pexels.com/photos/991970/pexels-photo-991970.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Drinks">
+<div class="overlay">
+    <p class="caption">Beverage</p> 
+</div>
+<p class="info">Beer is one of the oldest and most widely consumed alcoholic beverages in the world and it made from  water, malted barley, hops, and yeast.</p>
+</div>
+</div>
+</body>
+</html>

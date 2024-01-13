@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazine Blog Layout</title>
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Merriweather">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #515151;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr; 
+      grid-gap: 20px;
+      padding: 20px;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    article {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    article:hover {
+      transform: scale(1.03);
+    }
+
+    article img {
+        display: block;
+      width: 250px;
+      height: 250px;
+      border-bottom: 1px solid #ddd;
+      margin: 50px;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+.news{
+  padding: 10px;
+}
+    article div {
+      padding: 20px;
+      padding-top: 5px;
+      font-family: Merriweather;
+      font-size: large;
+    }
+
+    aside {
+      background-color: #f4f4f4;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 30px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Magazine Blog</h1>
+  </header>
+
+  <main>
+    <section>
+      <article>
+        <img src="https://t4.ftcdn.net/jpg/06/45/95/19/240_F_645951982_uYvWwdMdIqgWKiNdqMwucJkmIh6M8Fwz.jpg" alt="Chandrayaan-3">
+        <div>
+          <h2>Chandrayaan-3</h2>
+          <p>Chandrayaan-3 is a follow-on mission to Chandrayaan-2 to demonstrate end-to-end capability in safe landing and roving on the lunar surface. It consists of Lander and Rover configuration. It will be launched by LVM3 from SDSC SHAR, Sriharikota. The propulsion module will carry the lander and rover configuration till 100 km lunar orbit. The propulsion module has Spectro-polarimetry of Habitable Planet Earth (SHAPE) payload to study the spectral and Polari metric measurements of Earth from the lunar orbit.</p>
+        </div>
+      </article>
+
+      <article>
+        <img src="https://w0.peakpx.com/wallpaper/663/942/HD-wallpaper-ram-mandir-a-look-at-the-proposed-model-for-ram-janmbhoomi-temple-in-ayodhya-thumbnail.jpg" alt="Rama Mandira">
+        <div>
+          <h2>Ayodhya Rama Mandir</h2>
+          <p>The Ram Mandir is a Hindu temple that is under construction in Ayodhya, Uttar Pradesh, India. It is located at the site of Ram Janmabhoomi, the hypothesized birth place of Rama, a principal deity of Hinduism. The site is the former location of the Babri Masjid which was built after the demolition an existing non-Islamic structure. The worship of Hindu god Ram and Sita at the disputed site started when their idols were installed in 1949. In 2019, the Supreme Court of India delivered the verdict to give the disputed land to Hindus for a temple of Ram, while Muslims would be given land elsewhere to construct a mosque. The court referenced a report from the Archaeological Survey of India (ASI) as evidence suggesting the presence of a structure beneath the demolished Babri Masjid, that was found to be non-Islamic.</p>
+        </div>
+      </article>
+    </section>
+
+    <aside>
+      <h3>Popular Posts</h3>
+      <ul class="news">
+        <li><a href="#">The latest on Israel's war on Hamas.</a></li><br>
+        <li><a href="#">India remains top tourist market for Maldives in 2023</a></li><br>
+        <li><a href="#">PM Modi woos global corporate head honchos to invest in the India growth story</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Magazine Blog. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

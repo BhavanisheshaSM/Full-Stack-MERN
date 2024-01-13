@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navigation Bar</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Lemon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            padding-top: 0px;
+        }
+        header{
+    background-color: #333;
+    text-align: center;
+    color: #f4f4f4;
+    padding: 20px;
+    height: 50px;
+    font-family: Lemon;
+    font-size: large;
+}
+        nav {
+            background-color: #615c5c;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+        #home{
+            padding: 20px;
+        }
+        .Ho{
+            color: red;
+        }
+#home img{
+    padding-left: 500px;
+    height: 200px;
+    width: 300px;
+}
+#about img{
+    padding-left: 100px;
+    width: 300px;
+    height: 200px;
+}
+#service img{
+    width: 300px;
+    height: 300px;
+    padding-left: 550px;
+}
+#contact img{
+    padding-left: 500px;
+    width: 400px;
+    height: 250px;
+}
+.Title{
+    text-align: center;
+}
+.Exp{
+  line-height: 30px;
+}
+        nav a:hover {
+            color: #ffd700; 
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                margin: 10px 0;
+            }
+        }
+        footer{
+            background-color: #333;
+            text-align: center;
+            color: #f4f4f4;
+            padding: 5px;
+            height: 45px;
+            font-size: large;
+        }
+    </style>
+</head>
+<header>
+    <h2>Indian Space Research Organisation (ISRO)</h2>
+</header>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="home">
+        <h2 class="Ho">Home</h2>
+        <img src="data:image/png;base64,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" alt="Isro">
+        <div>
+          <h2 class="Title">Indian Space Research Organisation (ISRO)</h2>
+          <p class="Exp">The Indian Space Research Organisation (ISRO) is the space agency of the Government of India, responsible for the country's space program.
+            ISRO was founded on August 15, 1969, by Dr. Vikram Sarabhai, who is often regarded as the father of the Indian space program. The agency's primary objective is to use space technology for peaceful purposes and benefit the country's socio-economic development.
+ISRO's headquarters is located in Bengaluru, Karnataka, India.
+ISRO has developed a series of satellite launch vehicles, such as the Polar Satellite Launch Vehicle (PSLV) and the Geosynchronous Satellite Launch Vehicle (GSLV), to deploy satellites into various orbits.
+In 2013, ISRO successfully launched its first interplanetary mission, Mangalyaan, making India the first Asian nation to reach Martian orbit and the first nation in the world to do so in its maiden attempt.
+ISRO has conducted lunar exploration missions, with Chandrayaan-1 (2008) being India's first mission to the Moon, and Chandrayaan-2 (2019) aimed at exploring the lunar surface and conducting experiments.
+The Navigation with Indian Constellation (NavIC) is an independent regional navigation satellite system developed by ISRO to provide accurate positioning information over India and the surrounding region.
+ISRO has made significant strides in satellite communication, providing services for telecommunications, broadcasting, meteorology, and disaster management.
+ ISRO collaborates with various international space agencies and organizations. It has gained a reputation for providing cost-effective launch services for satellites from different countries.
+ISRO continues to have ambitious plans for future space exploration and research, including the Gaganyaan mission, which aims to send Indian astronauts to space.
+ISRO operates under the Department of Space and is funded by the Government of India. The organization has been known for achieving its goals with relatively modest budgets compared to other global space agencies.
+ISRO's achievements have garnered international recognition and have contributed to India's standing in the field of space exploration and technology. The organization remains committed to advancing scientific knowledge and fostering socio-economic development through space applications.</p>
+        </div>
+    </div>
+    <div id="about">
+        <h2 class="Ho">About</h2>
+        <img src="https://www.isro.gov.in/media_isro/image/index/Chandrayaan3/P10.jpg.webp" alt="Chandrayaan-3">
+        <img src="https://images.news18.com/ibnlive/uploads/2021/11/water-tracking-satellite-16375783413x2.png?impolicy=website&width=360&height=240" alt="Chandrayaan-3">
+        <img src="https://t4.ftcdn.net/jpg/06/45/95/19/240_F_645951982_uYvWwdMdIqgWKiNdqMwucJkmIh6M8Fwz.jpg" alt="Chandrayaan-3">
+        <div>
+          <h2 class="Title">Chandrayaan-3</h2>
+          <p class="Exp">Chandrayaan-3 is the third mission in the Chandrayaan programme, a series of lunar-exploration missions developed by the Indian Space Research Organisation (ISRO). The mission consists of a lunar lander named Vikram and a lunar rover named Pragyan, similar to those launched aboard Chandrayaan-2 in 2019.
+            Chandrayaan-3 was launched from Satish Dhawan Space Centre on 14 July 2023. The spacecraft entered lunar orbit on 5 August, and the lander touched down near the Lunar south pole on 23 August at 18:03 IST , making India the fourth country to successfully land on the Moon, and the first to do so near the lunar south pole. On 3 September the lander hopped and repositioned itself 30-40 cm  from its landing site making the second hop on lunar surface after Surveyor 6. After the completion of its mission objectives, it was hoped that the lander and rover would revive for extra tasks, on 22 September 2023, but missed the wake-up call. On September 30, the second lunar night began, eliminating hopes of revival.[15][16] On the other hand, Propulsion module returned to Earth's orbit on 22 November 2023 after exiting lunar orbit via a series of maneuvers starting from 9 October 2023.</p>
+        </div>
+    </div>
+    <div id="service">
+        <h2 class="Ho">Services</h2>
+        <img src="https://www.isro.gov.in/media_isro/image/services/sc.jpg.webp" alt="Services">
+        <div>
+          <h2 class="Title">Satellite Based Services</h2>
+          <p class="Exp">Advances in satellite technology have given rise to a healthy satellite services sector that provides various services to broadcasters, Internet service providers (ISPs), governments, the military, and other sectors. There are three types of communication services that satellites provide: telecommunications, broadcasting, and data communications. Telecommunication services include telephone calls and services provided to telephone companies, as well as wireless, mobile, and cellular network providers.</p>
+        </div>
+        <div>
+          <h2 class="Title">Launch Services</h2>
+          <p class="Exp">DoSISRO has been providing Launch services for customer satellites since 1999 onboard ISRO’s Polar Satellite Vehicle (PSLV). Till June 2019, 319 customer satellites from 33 countries have been launched onboard PSLV on commercial basis through its commercial arm . In September 2016, PSLV C-37 has successfully injected 104 satellites into orbit – the highest number of satellites launched in a single mission so far. PSLV is a versatile vehicle, capable of launching satellites into LEO (Low Earth Orbit) , SSO, Sub-GTO, GTO (Geosynchronous Transfer Orbit) Orbits. With ISRO operationalising its Geosynchronous Satellite Launch Vehicle (GSLV) and LVM3 and building Small Satellite Launch Vehicle (SSLV), as a launch on demand Vehicle, NSIL is in a position to offer and expand its launch services. The launches will be accomplished from Satish Dhawan Space Centre (SDSC), India’s Spaceport, located at Sriharikota, near Chennai.</p>
+        </div>
+        <div>
+            <h2 class="Title">MISSION SUPPORT SERVICE</h2>
+        <p class="Exp">With ISRO's experience of having accomplished around 100 satellite missions and 50 launches, NSIL, as its commercial arm, caters to mission operations and related support services for customer satellites. The services are extended through the state-of-art facilities and networks built for both low earth orbiting and geostationary satellite missions. The facilities are backed by strong technical expertise and experience in satellite operations and management. The satellite ground stations support operations in a variety of frequency bands (S, C, Ku, Ka, UHF and VHF ) and, with configurations to provide round-the-clock uninterrupted services for critical mission functions</p>
+    </div>
+    <img src="https://www.isro.gov.in/media_isro/image/services/mastercontrolfacility.jpg.webp" alt="Orbit">
+    <div>
+        <h2 class="Title">Transfer Orbit Service</h2>
+    <p class="Exp">Master Control Facility (MCF) at Hassan in Karnataka and Bhopal in Madhya Pradesh monitors and controls all the Geostationary / Geosynchronous satellites of ISRO, namely, INSAT, GSAT and IRNSS series of satellites. It also provides Transfer Orbit Support Services for Geo-Synchronous (GEO) Missions.</div>
+</div>
+<div id="contact">
+    <h2 class="Ho">Contact</h2>
+    <img src="https://static.theprint.in/wp-content/uploads/2018/03/6-01-e1530068959485.jpg" alt="Chandrayaan">
+    <div>
+      <h2 class="Title">Indian Space Research Organisation (ISRO)</h2>
+      <ul>
+      <li><p class="Exp">ISRO Headquarters, Antariksh Bhavan, New BEL Road<br>Bengaluru-560 094<br>Phone: +91 80 22172294 / 96<br>Email: isropr@isro.gov.in</p></li><br>
+      <li><p class="Exp">NRSC Data Centre [NDC],<br>National Remote Sensing Centre,<br>Department of Space<br>Government of India<br>Balanagar, Hyderabad-500 037<br>Phone: +9140 23878560 or 23884422<br>Email: sales@nrsc.gov.in</p></li>
+    </ul>
+    </div>
+</div>
+<footer>
+    <p>&copy; Copyright 2024 ISRO. All rights reserved.</p>
+</footer>
+</body>
+</html>

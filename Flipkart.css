@@ -1,0 +1,609 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #dce2e9;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.search {
+background-color: hsl(201, 52%, 89%);
+padding: 10px;
+border-radius: 5px;
+width: 500px;
+}
+.drpbtn {
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #8d2525;
+box-shadow: 0 8px 16px lightslategray;
+z-index: 1;
+
+}
+.Products {
+    margin: 100px;
+    padding: 10px;
+    height: 1000vh;
+    width: 500px;
+    display: inline;
+    gap: 10px;
+}
+.Pro{
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+.Gro{
+    padding-left: 20px;
+}
+.Mob{
+    padding-left: 25px;
+}
+.Tra{
+    padding-left: 50px;
+}
+.Ele{
+    padding-left: 25px;
+}
+.Apl{
+    padding-left: 70px;
+}
+.Hom{
+    padding-left: 25px;
+    background: none;
+}
+.Bea{
+    padding-left: 50px;
+}
+.Two{
+    padding-left: 100px;
+    padding-right:0px;
+}
+.Fas{
+    padding-left: 25px;
+    height: 100px;
+    width: 100px;
+}
+.Gr{
+    padding-left: 130px;
+}
+.Mo{
+    padding-left: 60px;
+}
+.Fa{
+    padding-left: 60px;
+}
+.El{
+    padding-left: 60px;
+}
+.Ho{
+    padding-left: 30px;
+}
+.Ap{
+    padding-left: 30px;
+}
+.Trv{
+    padding-left: 60px;
+} 
+.Be{
+    padding-left: 60px;
+}
+.Tw{
+    padding-left: 60px;
+} 
+.Sh{
+    font-weight: bold;
+    margin:20px;
+    padding-left:80px;
+}
+.ps{
+    font-weight: bold;
+    padding-left: 100px;  
+}
+.Ga{
+    font-weight: bold;
+    padding-left: 100px;  
+}
+.Tr{
+    font-weight: bold;
+    padding-left: 120px;  
+}
+.Pr{
+    font-weight: bold;
+    padding-left: 60px;  
+}
+.Sp{
+    font-weight: bold;
+    padding-left: 100px;  
+}
+
+h4{
+    /* padding: 50px; */
+    display: inline;
+}
+.Change{
+    padding-top: 20px;
+    width: 1700px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    padding: 5px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.Elct{
+    margin-left: 0px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+.El-product{
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    display: inline;
+}
+.container{
+    background-color:whitesmoke;
+    border: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+    content: 500px 300px;
+    border-radius: 20px;
+}
+.Cam{
+    height: 200px;
+    width: 200px;
+    padding-left: 30px;
+    background: none; 
+}
+.Cam:hover{
+    transform: scale(1.03);
+}
+.Pen{
+    height: 200px;
+    width: 200px;
+    padding-left: 30px;
+    background: none; 
+}
+.Pen:hover{
+    transform: scale(1.03);
+}
+.Key{
+    height: 200px;
+    width: 200px;
+    padding-left: 30px;
+    background: none; 
+}
+.Key:hover{
+    transform: scale(1.03);
+}
+.Trim{
+    height: 200px;
+    width: 200px;
+    padding-left: 30px;
+    background: none; 
+}
+.Trim:hover{
+    transform: scale(1.03);
+}
+.Proj{
+    height: 200px;
+    width: 200px;
+    padding-left:30px;
+    background: none; 
+}
+.Proj:hover{
+    transform: scale(1.03);
+}
+.Spe{
+    height: 200px;
+    width: 200px;
+    padding-left: 30px;
+    background: none; 
+}
+.Spe:hover{
+    transform: scale(1.03);
+}
+.TM{
+    margin: 20px;
+    padding-left: 40px;
+}
+.SD{
+    padding-left: 40px;
+}
+.Game{
+    padding-left: 100px;
+}
+.Tri{
+    padding-left: 120px;
+}
+.Prj{
+    padding-left: 160px;
+}
+.Spea{
+    padding-left: 160px;
+}
+.Electro{
+    background-color: aliceblue;
+    width: 1700px;
+    height: 350px;
+}
+.Others{
+    background-color: aliceblue;
+    width: 1700px;
+    height: 350px;
+}
+.Other{
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    display: inline;
+}
+.Face{
+    height: 200px;
+    width: 200px;
+    padding-left: 30px;
+    background: none; 
+}
+.Face:hover{
+    transform: scale(1.03);
+}
+.Cycle{
+    height: 200px;
+    width: 200px;
+    padding-left: 30px;
+    background: none; 
+}
+.Cycle:hover{
+    transform: scale(1.03);
+}
+.Toy{
+    height: 200px;
+    width: 200px;
+    padding-left: 30px;
+    background: none; 
+}
+.Toy:hover{
+    transform: scale(1.03);
+}
+.Book{
+    height: 200px;
+    width: 200px;
+    padding-left: 30px;
+    background: none; 
+}
+.Book:hover{
+    transform: scale(1.03);
+}
+.Teddy{
+    height: 200px;
+    width: 200px;
+    padding-left:30px;
+    background: none; 
+}
+.Teddy:hover{
+    transform: scale(1.03);
+}
+.Coffe{
+    height: 200px;
+    width: 200px;
+    padding-left: 30px;
+    background: none; 
+}
+.Coffe:hover{
+    transform: scale(1.03);
+}
+.Fc{
+    margin: 20px;
+    padding-left: 80px;
+}
+.Gc{
+    padding-left: 120px;
+}
+.Ct{
+    padding-left: 150px;
+}
+.Bk{
+    padding-left: 170px;
+}
+.Td{
+    padding-left: 180px;
+}
+.Cf{
+    padding-left: 160px;
+}
+.Fn{
+    font-weight: bold;
+    margin:20px;
+    padding-left:80px;
+}
+.Up{
+    font-weight: bold;
+    padding-left: 100px;  
+}
+.Ut{
+    font-weight: bold;
+    padding-left: 150px;  
+}
+.Sf{
+    font-weight: bold;
+    padding-left: 90px;  
+}
+.St{
+    font-weight: bold;
+    padding-left: 60px;  
+}
+.Uo{
+    font-weight: bold;
+    padding-left: 100px;  
+}
+.Air{
+    width: 1700px;
+}
+button {
+    background-color: #2874f0;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+.TsBd{
+    margin-left: 0px;
+    padding-left: 10px;
+    margin-top: 5px;
+    color: rgb(63, 63, 63);
+}
+.Ms{
+    margin-left: 5px;
+    font-size: medium;
+    color: rgb(63, 63, 63);
+    display: inline;
+}
+.Mss{
+    font-size: small;
+    color: rgb(63, 63, 63);
+    display: inline;  
+}
+.Intra{
+    height: 500px;
+    width: 1700px;
+    background-color: lightgray;
+
+}
+.Down{
+    background-color: #251F1D;
+    height: 250px;
+    width: 1800px;
+}
+.Ab{
+    margin: 20px;
+    font-size: small;
+    padding-left: 100px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.He{
+    font-size: small;
+    padding-left: 150px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Co{
+    font-size: small;
+    padding-left: 150px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.So{
+    font-size: small;
+    padding-left: 150px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Mu{
+    font-size: small;
+    padding-left: 120px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Roa{
+    font-size: small;
+    padding-left: 170px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Ctu{
+    margin: 20px;
+    font-size: small;
+    padding-left: 100px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Pym{
+    font-size: small;
+    padding-left: 130px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Cr{
+    font-size: small;
+    padding-left: 125px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Fcb{
+    font-size: small;
+    padding-left: 145px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Fip{
+    font-size: small;
+    padding-left: 113px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Fli{
+    font-size: small;
+    padding-left: 30px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Pym1{
+    font-size: small;
+    padding-left: 140px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Cr1{
+    font-size: small;
+    padding-left: 134px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Fcb1{
+    font-size: small;
+    padding-left: 199px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Fip1{
+    font-size: small;
+    padding-left: 134px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Fli1{
+    font-size: small;
+    padding-left: 54px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Pym2{
+    font-size: small;
+    padding-left: 148px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Cr2{
+    font-size: small;
+    padding-left: 53px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Fcb2{
+    font-size: small;
+    padding-left: 227px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Fip2{
+    font-size: small;
+    padding-left: 120px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Fli2{
+    font-size: small;
+    padding-left: 50px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Pym3{
+    font-size: small;
+    padding-left: 109px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Cr3{
+    font-size: small;
+    padding-left: 158px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Fip3{
+    font-size: small;
+    padding-left: 401px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Fli3{
+    font-size: small;
+    padding-left: 19px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Pym4{
+    font-size: small;
+    padding-left: 160px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Cr4{
+    font-size: small;
+    padding-left: 77px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Fip4{
+    font-size: small;
+    padding-left: 400px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Fli4{
+    font-size: small;
+    padding-left: 100px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Cr5{
+    font-size: small;
+    padding-left: 270px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Fip5{
+    font-size: small;
+    padding-left: 335px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Fli5{
+    font-size: small;
+    padding-left: 120px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Fli6{
+    font-size: small;
+    padding-left: 911px;
+    color: #E5E8E8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer {
+    background-color:#251F1D;
+    text-align: center;
+    padding: 10px;
+    color: #E5E8E8;
+}

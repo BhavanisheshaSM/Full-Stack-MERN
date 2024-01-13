@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
+}
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #605e5e;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-image {
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size:large;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.job-title {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.bio {
+    color: #524d4d;
+    line-height: 1.4;
+}

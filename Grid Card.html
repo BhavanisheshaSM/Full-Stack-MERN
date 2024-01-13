@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Card Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      justify-content: center;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px black;
+      transition: transform 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      height: 320px;
+    }
+    .card1 {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px red;
+      transition: transform 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      height: 275px;
+    }
+    .card2 {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px yellow;
+      transition: transform 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+    }
+    .card3 {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px green;
+      transition: transform 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      height: 550px;
+    }
+    .card4 {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px gold;
+      transition: transform 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      height: 395px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card1:hover {
+      transform: scale(1.05);
+    }
+    .card2:hover {
+      transform: scale(1.05);
+    }
+    .card3:hover {
+      transform: scale(1.05);
+    }
+    .card4:hover {
+      transform: scale(1.05);
+    }
+  
+    .content {
+      padding: 20px;
+      flex: 1;
+    }
+    .content1 {
+      padding: 20px;
+      flex: 1;
+    }
+    .content2 {
+      padding: 20px;
+      flex: 1;
+    }
+    .content3 {
+      padding: 20px;
+      flex: 1;
+    }
+    .content4 {
+      padding: 20px;
+      flex: 1;
+    }
+ 
+    .title {
+      font-size: large;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .description {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="content">
+      <div class="title">ISRO</div>
+      <p class="description">The Indian Space Research Organisation (ISRO) is the space agency of the Government of India, responsible for the country's space program. ISRO was founded on August 15, 1969, by Dr. Vikram Sarabhai, who is often regarded as the father of the Indian space program.  The agency's primary objective is to use space technology for peaceful purposes and benefit the country's socio-economic development.</p>
+    </div>
+  </div>
+
+  <div class="card1">
+    <div class="content1">
+      <div class="title">FORTUNER</div>
+      <p class="description">The Toyota Fortuner is a popular mid-size SUV produced by the Japanese automaker Toyota. It is known for its robust and rugged design, making it suitable for both on-road and off-road driving. The Fortuner has gained popularity in various markets worldwide, particularly in regions where there is a demand for durable and versatile SUVs.</p>
+    </div>
+  </div>
+
+  <div class="card2">
+    <div class="content2">
+      <div class="title">ROYAL ENFIELD</div>
+      <p class="description">Royal Enfield is a well-known motorcycle manufacturer based in India, with a rich history dating back to the late 19th century. Royal Enfield was originally a British motorcycle company established in 1893. It has a long and storied history, playing a significant role in both World Wars by supplying motorcycles to the military.
+        In 1955, the Indian government acquired the rights to the Royal Enfield brand. The company has been manufacturing motorcycles in India since then, and it has become synonymous with classic, retro-styled bikes.</p>
+    </div>
+  </div>
+  <div class="card3">
+    <div class="content3">
+      <div class="title">MANGALORE</div>
+      <p class="description">Mangalore, officially known as Mangaluru, is a vibrant port city located in the southwestern state of Karnataka, India. Mangalore is situated on the Arabian Sea coast, and it is part of the Western Ghats mountain range. The city is known for its scenic beauty, with hills, rivers, and the sea contributing to its geographical diversity.
+        As a major port city, Mangalore has been historically significant for trade and commerce. The New Mangalore Port, one of the major ports in India, plays a crucial role in facilitating trade in the region. Mangalore has a rich cultural heritage with a blend of various communities and traditions. The predominant languages spoken in the region include Tulu, Konkani, Kannada, and Beary. The city hosts various cultural events, festivals, and religious celebrations.</p>
+    </div>
+  </div>
+  <div class="card4">
+    <div class="content4">
+      <div class="title">BANGALORE</div>
+      <p class="description">Bengaluru is the capital city of the Indian state of Karnataka. It is located in the southeastern part of the state on the Deccan Plateau.
+        Known as the "Silicon Valley of India," Bengaluru is a major hub for information technology (IT) companies, both domestic and international. It hosts numerous IT parks and tech-related industries. The city boasts several landmarks, including Vidhana Soudha (the seat of the state legislature), Bangalore Palace, Lalbagh Botanical Garden, and Cubbon Park. The iconic Vidhana Soudha is an architectural marvel.</p>
+    </div>
+  </div>
+</body>
+</html>

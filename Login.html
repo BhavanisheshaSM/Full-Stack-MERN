@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style type="text/css">
+        .html{
+            color: orange;
+            background-color: rgb(52, 162, 162);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #Web{
+            color: orangered;
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .reg{
+            background-color: yellowgreen;
+            font-size:large;
+            margin: 50px;
+            padding: 20px;
+        }
+        label{
+            width: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="reg">
+    <form method="get">
+        <h1> Registration Details:</h1>
+        <label>User Name:</label>
+        <input type="text" name="username" placeholder="Enter your name">
+        <br><br>
+        <label>Password:</label>
+        <input type="text" name="password" placeholder="Enter your Password">
+        <br>
+        <label> Confirm Password:</label>
+        <input type="text" name="confirmpassword" placeholder="Re-Enter your Password">
+        <br>
+        <label>Contact Number:</label>
+        <input type="telephone" name="contact" placeholder="Enter your Number" required>
+        <br><br>
+        <label>Gender:</label>
+        <input type="radio" id="gender" name="gender" value="male">Male
+        <input type="radio" id="gender" name="gender" value="female">Female
+        <input type="radio" id="gender" name="gender" value="other">Other
+        <br><br>
+        <label>Date Of Birth:</label>
+        <input type="date" id="date" name="date" placeholder="Enter your Date of Birth">
+        <br><br>
+        <Label>Annual Income</Label>
+        <input type="range" min="10000" max="100000" step="1000">
+        <br><br>
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" name="reset" value="Reset">
+    </div>
+    </form>
+    <h3 class="html"> HTML is the standard markup language for Web pages. It  is the most basic building block of the Web. It defines the meaning and structure of web content.</h1>
+    <h4 id="Web" >HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes, and other ...</h2>
+</body>
+</html>
