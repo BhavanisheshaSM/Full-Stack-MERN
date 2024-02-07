@@ -2,8 +2,6 @@
 
 let x =[1, 3454, 655, 24, 7, 8]
 let largest =0
-
-/** using for loop **/
 for(i=0;i<x.length;i++)
 {
 	if(x[i]>largest)
