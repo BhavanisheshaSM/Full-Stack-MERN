@@ -1,0 +1,50 @@
+<!-- Create a simple search application and implement a debouncing functionality while searching. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Application using Debouncing</title>
+<style>
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Search Application</h1>
+    <input type="text" id="search"  placeholder="Search here...">
+    <h2>Debouncing : <span id="debouncing"></span></h2>
+</div>
+<script>
+let Count=0
+  let debCount=0
+  let timeoutId
+  let debouncing = (func) => {
+    return function(event)
+    {
+        clearTimeout(timeoutId)
+        timeoutId = setTimeout(
+        () => { debCount++
+            func(event)
+        }, 2000)
+    }
+  }
+let debouncing1 = debouncing((event) => document.getElementById('debouncing').innerHTML = event.target.value)
+document.getElementById(`search`).addEventListener('input', debouncing1)
+</script>
+</body>
+</html>
