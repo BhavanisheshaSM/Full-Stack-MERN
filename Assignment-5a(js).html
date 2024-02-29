@@ -1,0 +1,56 @@
+<!-- Create a TO-do list application add the functionlity to add,remove and edit 
+make sure the application is responsive should have a good styling. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #text {
+            width: 70%;
+            padding: 8px;
+            margin-right: 10px;
+        }
+        button {
+            height: 30px;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <label for="name"> Enter Your Name :</label>
+        <input type="text" id="text" placeholder="Enter your name">
+        <button onclick="add()">Submit</button>
+        <div class="div1" id="output"><div>
+    </div>
+    <script>
+    function add()
+    {
+        let text=document.getElementById("text")
+        let output=document.getElementById("output")
+        
+        let div1=document.createElement("div1")
+        div1.innerHTML=text.value + '<button class="delete-button" onclick="remove(this)">Delete</button>'
+        output.appendChild(div1)
+        text.value=""
+    }
+    function remove(element)
+    {
+        let div1=element.parentElement
+        div1.remove()
+    }
+    </script>
+</body>
+</html>
